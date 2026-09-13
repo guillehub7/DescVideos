@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0f1f"/>
+      <stop offset="55%" stop-color="#101a33"/>
+      <stop offset="100%" stop-color="#1a1233"/>
+    </linearGradient>
+    <linearGradient id="acento" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3d5afe"/>
+      <stop offset="50%" stop-color="#9b5cff"/>
+      <stop offset="100%" stop-color="#e1306c"/>
+    </linearGradient>
+    <linearGradient id="pantalla" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f2f4fb"/>
+    </linearGradient>
+    <filter id="sombra" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="22" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <filter id="brillo" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="38" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#fondo)"/>
+
+  <!-- Trama sutil de fondo: unos y ceros -->
+  <g fill="#ffffff" opacity="0.035" font-family="Consolas, 'Courier New', monospace" font-size="13">
+    <text x="60" y="640">01000100 01100101 01110011 01100011 01010110 01101001 01100100 01100101 01101111 01110011 00100000 11101111 10111111</text>
+    <text x="60" y="30">10011010 00110010 01010110 01101001 01100100 01100101 01101111 01110011 00100000 01000100 01101001 01100001</text>
+  </g>
+  <circle cx="1090" cy="120" r="150" fill="#9b5cff" opacity="0.10" filter="url(#brillo)"/>
+  <circle cx="150" cy="600" r="130" fill="#3d5afe" opacity="0.10" filter="url(#brillo)"/>
+
+  <!-- Encabezado -->
+  <text x="70" y="78" font-size="40" font-weight="700" fill="#ffffff">Día del Programador</text>
+  <rect x="70" y="92" width="180" height="4" rx="2" fill="url(#acento)"/>
+  <text x="70" y="124" font-size="16" fill="#8fa3c8">13 de septiembre · día 256 del año · 2⁸ · un byte entero</text>
+
+  <!-- Insignia 256 -->
+  <g transform="translate(1020,44)">
+    <rect x="0" y="0" width="112" height="72" rx="16" fill="#141d36" stroke="#2b3a5e" stroke-width="1.5"/>
+    <text x="56" y="40" font-size="30" font-weight="700" fill="#7ee787" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">256</text>
+    <text x="56" y="58" font-size="10" fill="#6b7f99" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">0b100000000</text>
+  </g>
+
+  <!-- ================= TELÉFONO ================= -->
+  <g filter="url(#sombra)">
+    <rect x="72" y="164" width="272" height="452" rx="34" fill="#1d2537"/>
+    <rect x="84" y="176" width="248" height="428" rx="26" fill="url(#pantalla)"/>
+  </g>
+
+  <!-- Barra superior de la app -->
+  <text x="102" y="208" font-size="15" font-weight="700" fill="#1b2333">DescVideos</text>
+  <circle cx="292" cy="203" r="4.5" fill="#3d5afe" opacity="0.85"/>
+  <circle cx="310" cy="203" r="4.5" fill="#c3cbdd"/>
+
+  <!-- Campo de enlace -->
+  <rect x="100" y="222" width="216" height="38" rx="12" fill="#e9edf7"/>
+  <circle cx="117" cy="241" r="5.5" fill="none" stroke="#8794ad" stroke-width="1.6"/>
+  <text x="130" y="245" font-size="9.5" fill="#66748f" font-family="Consolas, 'Courier New', monospace">instagram.com/reel/Dcw2T…</text>
+
+  <!-- Chip de plataforma detectada -->
+  <rect x="100" y="270" width="124" height="22" rx="11" fill="#fde7ef" stroke="#f3b6cd" stroke-width="1"/>
+  <circle cx="112" cy="281" r="4" fill="#e1306c"/>
+  <text x="121" y="285" font-size="9.5" font-weight="600" fill="#c22a5f">Instagram · Reel</text>
+
+  <!-- Tarjeta de resultado -->
+  <rect x="100" y="302" width="216" height="158" rx="14" fill="#eef1f9" stroke="#dde3f0" stroke-width="1"/>
+
+  <circle cx="114" cy="322" r="6" fill="none" stroke="#17a34a" stroke-width="1.8"/>
+  <path d="M111 322 l2.2 2.4 l4.2 -5" fill="none" stroke="#17a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="126" y="326" font-size="11" font-weight="700" fill="#17a34a">Público</text>
+  <text x="306" y="326" font-size="8.5" fill="#8794ad" text-anchor="end">is_private: false</text>
+
+  <text x="114" y="350" font-size="10.5" font-weight="600" fill="#1b2333">Esta canción se apodera…</text>
+  <text x="114" y="366" font-size="9" fill="#7b879e">ordigordon</text>
+
+  <rect x="112" y="378" width="192" height="1" fill="#dde3f0"/>
+
+  <rect x="112" y="388" width="192" height="34" rx="9" fill="#ffffff" stroke="#3d5afe" stroke-width="1.4"/>
+  <circle cx="127" cy="405" r="6.5" fill="none" stroke="#3d5afe" stroke-width="1.6"/>
+  <circle cx="127" cy="405" r="2.6" fill="#3d5afe"/>
+  <text x="141" y="402" font-size="9.5" font-weight="700" fill="#1b2333">720p (video + audio)</text>
+  <text x="141" y="414" font-size="8.5" fill="#7b879e">3.4 MB · progressive</text>
+
+  <text x="114" y="440" font-size="8" fill="#9aa5bb">+ 8 pistas DASH sin audio (descartadas)</text>
+  <text x="114" y="452" font-size="8" fill="#9aa5bb">Movies/DescVideos/</text>
+
+  <!-- Botón -->
+  <rect x="100" y="470" width="216" height="40" rx="12" fill="#3d5afe"/>
+  <path d="M200 482 l0 12 M195 490 l5 5 l5 -5 M192 501 l16 0" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="218" y="495" font-size="12.5" font-weight="700" fill="#ffffff">Descargar</text>
+
+  <!-- Barra de progreso -->
+  <rect x="100" y="524" width="216" height="6" rx="3" fill="#dde3f0"/>
+  <rect x="100" y="524" width="152" height="6" rx="3" fill="url(#acento)"/>
+  <text x="100" y="546" font-size="8.5" fill="#8794ad">Descargando…</text>
+  <text x="316" y="546" font-size="8.5" fill="#8794ad" text-anchor="end">2.4 / 3.4 MB</text>
+
+  <!-- ================= TARJETA DE CÓDIGO ================= -->
+  <g filter="url(#sombra)">
+    <rect x="388" y="164" width="742" height="452" rx="18" fill="#0d1117" stroke="#243049" stroke-width="1.5"/>
+  </g>
+  <rect x="388" y="164" width="742" height="42" rx="18" fill="#161b26"/>
+  <rect x="388" y="190" width="742" height="16" fill="#161b26"/>
+  <circle cx="412" cy="185" r="6" fill="#ff5f57"/>
+  <circle cx="432" cy="185" r="6" fill="#febc2e"/>
+  <circle cx="452" cy="185" r="6" fill="#28c840"/>
+  <text x="476" y="189" font-size="11.5" fill="#8b98b0" font-family="Consolas, 'Courier New', monospace">lib/services/resolvers/instagram_resolver.dart</text>
+  <text x="1110" y="189" font-size="11.5" fill="#5a6780" text-anchor="end" font-family="Consolas, 'Courier New', monospace">Dart</text>
+
+  <g font-family="Consolas, 'Courier New', monospace" font-size="14.5" xml:space="preserve">
+    <!-- números de línea -->
+    <g fill="#3d4a63" text-anchor="end">
+      <text x="432" y="242">142</text>
+      <text x="432" y="266">143</text>
+      <text x="432" y="290">144</text>
+      <text x="432" y="314">145</text>
+      <text x="432" y="338">146</text>
+      <text x="432" y="362">147</text>
+      <text x="432" y="386">148</text>
+      <text x="432" y="410">149</text>
+      <text x="432" y="434">150</text>
+      <text x="432" y="458">151</text>
+      <text x="432" y="482">152</text>
+      <text x="432" y="506">153</text>
+      <text x="432" y="530">154</text>
+      <text x="432" y="554">155</text>
+      <text x="432" y="578">156</text>
+    </g>
+
+    <text x="452" y="242" fill="#6b7f99">/// El parámetro efg de cada URL dice qué stream es:</text>
+    <text x="452" y="266" fill="#6b7f99">///   xpv_progressive…720.dash_baseline → con audio</text>
+    <text x="452" y="290" fill="#6b7f99">///   dash_r2evevp9…_q80               → solo video</text>
+
+    <text x="452" y="338"><tspan fill="#ff7b72">final</tspan><tspan fill="#c9d1d9"> tag = </tspan><tspan fill="#d2a8ff">_vencodeTag</tspan><tspan fill="#c9d1d9">(url) ?? </tspan><tspan fill="#a5d6ff">''</tspan><tspan fill="#c9d1d9">;</tspan></text>
+
+    <text x="452" y="386"><tspan fill="#ff7b72">if</tspan><tspan fill="#c9d1d9"> (tag.</tspan><tspan fill="#d2a8ff">contains</tspan><tspan fill="#c9d1d9">(</tspan><tspan fill="#a5d6ff">'progressive'</tspan><tspan fill="#c9d1d9">)) {</tspan></text>
+    <text x="468" y="410"><tspan fill="#c9d1d9">variants.</tspan><tspan fill="#d2a8ff">add</tspan><tspan fill="#c9d1d9">(</tspan><tspan fill="#7ee787">MediaVariant</tspan><tspan fill="#c9d1d9">(</tspan></text>
+    <text x="484" y="434"><tspan fill="#79c0ff">url</tspan><tspan fill="#c9d1d9">: url,</tspan></text>
+    <text x="484" y="458"><tspan fill="#79c0ff">label</tspan><tspan fill="#c9d1d9">: </tspan><tspan fill="#a5d6ff">'${height}p (video + audio)'</tspan><tspan fill="#c9d1d9">,</tspan></text>
+    <text x="484" y="482"><tspan fill="#79c0ff">format</tspan><tspan fill="#c9d1d9">: </tspan><tspan fill="#7ee787">StreamFormat</tspan><tspan fill="#c9d1d9">.progressive,</tspan></text>
+    <text x="468" y="506"><tspan fill="#c9d1d9">));</tspan></text>
+    <text x="452" y="530"><tspan fill="#c9d1d9">}</tspan></text>
+
+    <text x="452" y="578"><tspan fill="#6b7f99">// Solo lo público se descarga. </tspan><tspan fill="#ff7b72">bool</tspan><tspan fill="#c9d1d9"> allowsDownload =&gt; </tspan><tspan fill="#7ee787">publico</tspan><tspan fill="#c9d1d9">;</tspan></text>
+  </g>
+
+  <!-- Pie -->
+  <text x="70" y="650" font-size="12.5" fill="#6b7f99">Flutter · Dart · 2.731 líneas · 9 calidades detectadas · 1 con audio</text>
+  <text x="1130" y="650" font-size="12.5" fill="#6b7f99" text-anchor="end">while (bug) { café++; }</text>
+</svg>
